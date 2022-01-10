@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block title %} <title>Mortgage broker</title> {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{%static 'css/jquery.timepicker.css' %}">
+    <link rel="stylesheet" href="{%static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+  </head>
+  
+  <body bg_color="#3c7789" data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    
+	<!-- START navbar -->	
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">Mortgage broker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#section-offer" class="nav-link">Offers</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END navbar -->
+
+	{% block content %} {% endblock %}
+
+    <!-- Start Footer -->
+    <footer class="site-footer site-bg-dark site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4 site-animate">
+                <h1 class="site-heading-2">Our aspiration</h1>
+                <p>With us you are in complete confidence!</p>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3 site-animate">
+                <div class="site-footer-widget mb-4">
+                  <h1 class="site-heading-2">Mortgage broker</h1>
+                  <ul class="list-unstyled">
+                    <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                    <li><a href="#section-about" class="nav-link">About Us</a></li>
+                    <li><a href="#section-offer" class="nav-link">Offers</a></li>
+                    <li><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+			  <div class="col-md-4 site-animate">
+                <div class="site-footer-widget mb-4">
+                  <h1 class="site-heading-2">Working hours</h1>
+                  <p>Monday through Friday: 9:00 - 17:00</p>
+                  <p>Saturday and Sunday: weekend</p>
+                </div>
+              </div>
+           </div>
+          </div>
+         </div>
+        <div class="row site-animate">
+           <div class="col-md-12 text-center">
+            <div class="site-footer-widget mb-1">
+              <ul class="site-footer-social list-unstyled ">
+                <li class="site-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="site-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="site-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<!-- END Footer -->
+
+    <!-- START loader -->
+    <div id="site-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- END loader -->
+	
+    <script src="{%static 'js/jquery.min.js' %}"></script>
+    <script src="{%static 'js/popper.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{%static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{%static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{%static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap-datepicker.js' %}"></script>
+    <script src="{%static 'js/jquery.timepicker.min.js' %}"></script>
+    <script src="{%static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{%static 'js/main.js' %}"></script>
+  </body>
+</html>
